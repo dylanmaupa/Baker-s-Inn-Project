@@ -1,0 +1,26 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    /* justify-content: space-between; */
+}
+
+.menu{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.menu-item a{
+    font-size: 23px;
+    color: var(--pri-color);
+}
+.btn{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--sec-color);
+    background: var(--accent-brown);
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 18px;
+}

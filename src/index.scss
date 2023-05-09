@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/avenir-lt-std');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.cdnfonts.com/css/3dumb');
+@import 'main';
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--pri-color);
+  background-color: var(--bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --bg-color: #fff;
+  --pri-color: #261B6C;
+  --sec-color: #fff;
+  --accent-brown: #B2904C;
+  --accent-red: #FF4655;
+  --accent-blue: #018BF1;
+}
+
+.logo{
+  max-width: 12.5rem;
+  width: 100%;
+}
+
+/*** Reset ****/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  font-family: 'Avenir LT Std', sans-serif;
+  font-weight: 750;
+}
+::after,::before{
+  display: block;
+  content: "";
+}
