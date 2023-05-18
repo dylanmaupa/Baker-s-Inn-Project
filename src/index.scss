@@ -23,29 +23,59 @@
   --accent-brown: #B2904C;
   --accent-red: #FF4655;
   --accent-blue: #018BF1;
+  --accent-grey:  #F8F8F8;
 }
 
-.logo{
+body {
+  overflow-x: hidden;
+}
+
+section {
+  // margin: 6rem 0;
+  margin-top: 6rem;
+}
+
+.logo {
   max-width: 12.5rem;
   width: 100%;
 }
 
 /*** Reset ****/
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Avenir LT Std', sans-serif;
 }
-li{
+
+li {
   list-style-type: none;
 }
-a{
+
+a {
   text-decoration: none;
   font-family: 'Avenir LT Std', sans-serif;
   font-weight: 750;
 }
-::after,::before{
+
+p{
+  font-size: 20px;
+}
+
+h2{
+  font-size: 42px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+}
+
+::after,
+::before {
   display: block;
   content: "";
 }
