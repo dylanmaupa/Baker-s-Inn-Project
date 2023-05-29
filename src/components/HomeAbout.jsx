@@ -1,12 +1,13 @@
 import Button from "./Button";
 import useFetch from "./useFetch";
+import data from "../../database/db";
 
 
 const HomeAbout = () => {
-    const { data: homeAbout, error, isLoading } = useFetch('http://localhost:7001/homeAbout');
+    // const { data: homeAbout, error, isLoading } = useFetch('http://localhost:7001/homeAbout');
     return (
         <>
-            {homeAbout && homeAbout.map((item, index) => {
+            {data.homeAbout && data.homeAbout.map((item, index) => {
                 return (
                     <section className="home-about" >
                         <div className="about-textBox" key={index}>

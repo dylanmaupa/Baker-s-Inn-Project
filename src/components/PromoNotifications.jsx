@@ -2,13 +2,14 @@ import { ReactComponent as PatternThree } from "../assets/img/African Pattern 3.
 import { ReactComponent as PatternFour } from "../assets/img/African Pattern 4.svg";
 import BreadCarousel from "./BreadCarousel";
 import useFetch from "./useFetch";
+import data from "../../database/db";
 
 
 const PromoNotifications = () => {
-    const { data: PromoNotifications, error, isLoading } = useFetch('http://localhost:7001/PromoNotifications');
+    // const { data: PromoNotifications, error, isLoading } = useFetch('http://localhost:7001/PromoNotifications');
     return (
         <>
-            {PromoNotifications && PromoNotifications.map((item, index) => {
+            {data.PromoNotifications && data.PromoNotifications.map((item, index) => {
                 return (
                     <section className="promo-notifications">
                         <PatternThree className="pattern" />

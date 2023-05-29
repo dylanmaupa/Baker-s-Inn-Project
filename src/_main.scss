@@ -41,7 +41,7 @@
 .hero,
 .home-kids,
 .promo-notifications,
-.aboutHero {
+.aboutHero, .productsHero {
     background: var(--pri-color);
     display: flex;
     border-radius: 10px;
@@ -188,6 +188,7 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
+    position: relative;
     text-align: left;
 
     .ft-textBox {
@@ -200,6 +201,9 @@
 
     .ft-img {
         width: 100%;
+    }
+    .factory-modal{
+        position: absolute;
     }
 }
 
@@ -225,6 +229,57 @@
         width: 100%;
     }
 }
+
+
+// ***** Landing Page HomeRecipes *****
+
+.tab-content{
+    margin-top: 40px;
+    .tab-wrapper.tab-Active{
+        display: flex;
+    }
+
+    .tab-wrapper{
+        display: flex;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: none;
+        gap: 30px;
+        text-align: left;
+
+        .tab-card{
+            box-shadow: 0px 0px 10px #9d9d9d;
+            border-radius: 6px;
+            padding: 6px;
+            position: relative;
+             h3{
+                font-weight:900;
+                font-size: 26px;
+                font-family: 'Montserrat', sans-serif;
+             }
+             p{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-weight: 800;
+
+                span{
+                    color: var(--accent-brown);
+                    font-weight: 800;
+                    font-family: 'Montserrat', sans-serif;
+                    margin-left: 10px;
+                }
+             }
+             .right-arrow{
+                position: absolute;
+                right: 10px;
+                bottom: -5px;
+                width: 12%;
+                cursor: pointer;
+             }
+        }
+    }
+}
+
 
 // ***** Landing Page HomeKids *****
 .home-kids {
@@ -374,6 +429,7 @@
 
 // ***** Landing Page HomeRecipes *****
 .home-recipes{
+    margin-top: 17rem;
     .nav-rec{
         width: 100%;
         border-bottom: 1px solid #261B6C;
@@ -387,6 +443,7 @@
                 font-size: 24px;
                 font-weight: 600;
                 color: #261b6c6e;
+                cursor: pointer;
                 font-family: 'Montserrat', sans-serif;
             }
             .active{
@@ -398,7 +455,30 @@
         }
     }
 }
+.nav-rec{
+    width: 100%;
+    border-bottom: 1px solid #261B6C;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 
+    li{
+        a{
+            font-size: 24px;
+            font-weight: 600;
+            color: #261b6c6e;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .active{
+            color: var(--pri-color);
+            font-weight: 800;
+            //  padding-inline: 10px;
+            border-bottom: 5px solid var(--accent-brown);
+        }
+    }
+}
 
 // ***** Landing Page Footer *****
 footer{
@@ -494,7 +574,7 @@ footer{
 }
 
 // ***** About Page Hero *****
-.aboutHero{
+.aboutHero, .productsHero{
     background: url(./assets/img/bakers-outlet.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -615,4 +695,142 @@ footer{
             }
         }
     }
+}
+
+// ***** About Page ProductsHero *****
+.productsHero{
+    background: url(./assets/img/cookies.jpg);
+}
+
+.tab-content.products{
+    .tab-wrapper{
+        text-align: center;
+        .tab-card{
+            background: var(--accent-brown2);
+            box-shadow: none;
+            .img{
+                width: 70%;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                }
+            }
+            .textBox{
+                h3{
+                    font-size: 32px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .tab-wrapper.products.tab-Active{
+        // max-width: 1366px;
+        overflow-x: scroll;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+
+        padding: 10px;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .tab-card{
+            width: 350px;
+            grid-row: 1;
+            background: var(--accent-brown2);
+            box-shadow: none;
+            padding: 10px 20px;
+
+            .img{
+                width: 40%;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                }
+            }
+            .textBox{
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+        }
+        .tab-card:nth-child(2),.tab-card:nth-child(3){
+            .img{
+                width: 60%;
+            }
+        }
+    }
+}
+
+.kids-hero{
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    position: relative;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 80vh;
+    h1{
+        font-size: 120px;
+        text-align: left;
+        line-height: 1.2;
+        font-family: '3Dumb',sans-serif;
+    }
+
+    .imgBox{
+        img{
+            position: absolute;
+            width: 60%;
+            right: 0;
+            z-index: -1;
+            top: -70px;
+        }
+    }
+}
+.games{
+    max-width: 1320px;
+    margin: 0 auto;
+    text-align: left;
+    color: var(--sec-color);
+    border-radius: 10px;
+    padding-block: 30px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    .textBox{
+        width: 100%;
+        p{
+            font-weight: 750;
+            font-size: 22px;
+        }
+    }
+    .img{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+.space-maze{
+    background: var(--accent-blue);
+
+    .textBox{
+        p{
+            margin-block: 20px;
+            padding-right: 6rem;
+        }
+    }
+}
+.risky-way{
+    background: var(--accent-red);
+}
+.risky-way{
+    background: var(--pri-color);
 }

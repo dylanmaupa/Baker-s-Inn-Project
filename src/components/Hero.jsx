@@ -4,14 +4,15 @@ import { ReactComponent as PatternTwo } from "../assets/img/African Pattern 2.sv
 import BreadCarousel from "../components/BreadCarousel";
 import Button from "../components/Button";
 import useFetch from "../components/useFetch";
+import data from "../../database/db";
 
 
 const Hero = () => {
-    const { data: hero, error, isLoading } = useFetch('http://localhost:7001/hero');
+    // const { data: hero, error, isLoading } = useFetch('http://localhost:7001/hero');
 
     return (
         <>
-          { hero && hero.map((item, index) => {
+          { data.hero && data.hero.map((item, index) => {
             return (
               <div className="hero" key={index}>
                 <PatternOne className="pattern" />

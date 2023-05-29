@@ -3,12 +3,15 @@ import CoreValues from "../components/CoreValues";
 import MissionVision from "../components/MissionVision";
 import QualityPromise from "../components/QualityPromise";
 import useFetch from "../components/useFetch";
+import data from "../../database/db";
 
 const AboutUs = () => {
-  const { data: AboutUs, error, isLoading } = useFetch('http://localhost:7001/AboutUs');
+  // let AboutUs = data;
+  // console.log(AboutUs)
+  // const { data: AboutUs, error, isLoading } = useFetch('http://localhost:7001/AboutUs');
   return (
     <>
-      {AboutUs && AboutUs.map(item => {
+      {data.AboutUs && data.AboutUs.map(item => {
         return (
           <>
             {item.content && item.content.map(item => {

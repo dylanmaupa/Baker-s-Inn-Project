@@ -2,12 +2,13 @@ import useFetch from "./useFetch";
 import { ReactComponent as PatternOne } from "../assets/img/African Pattern 1.svg";
 import { ReactComponent as PatternTwo } from "../assets/img/African Pattern 2.svg";
 import Button from "./Button";
+import data from "../../database/db";
 
 const HomeKids = () => {
-    const { data: HomeKids, error, isLoading } = useFetch('http://localhost:7001/HomeKids');
+    // const { data: HomeKids, error, isLoading } = useFetch('http://localhost:7001/HomeKids');
     return (
         <>
-            {HomeKids && HomeKids.map((item, index) => {
+            {data.HomeKids && data.HomeKids.map((item, index) => {
                 return (
                     <section className="home-kids">
                         <PatternOne className='pattern' />

@@ -1,4 +1,4 @@
-{
+const data = {
     "hero": [
         {
             "id": 1,
@@ -393,3 +393,6 @@
         }
     ]
 }
+
+
+export default data;
