@@ -387,6 +387,79 @@ const data = {
                             "text2":"Develop kids’ skills in strategizing, spatial awareness, hand-eye coordination, problem solving and more! Free to play, priceless for learning.",
                             "image":"src/assets/img/maze.png"
                         }
+                    ],
+                    "riskyWay":[
+                        {
+                            "id":3,
+                            "title":"Risky Way",
+                            "text":"Risky Way is a free instant game. The highways of the future are risky and if you want to survive you'll need to be smarter than all of them combined. All you have to do in this nerve-tingling racing game is click, hold, and let go. Of course, if you want to be an effective driver who is able to survive you'll have to know when to click, how long to hold, and only let go at the appropriate time.",
+                            "image":"src/assets/img/risky-way.png"
+                        }
+                    ],
+                    "pacman":[
+                        {
+                            "id":4,
+                            "title":"Pacman",
+                            "text":"There's nothing like a little old school Pacman game right? The great arcade game Pac Man was ported to the NES in 1988 and you can play it right here. Never played before?! What?! Eat all the pellets to complete a stage while trying to score as many points as possible by eating fruit and ghosts along the way! But there's more! Ever wonder how Pacman got started? Check out the history of Pacman below and see how it all began.",
+                            "image":"src/assets/img/pac-man.png"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "contact":[
+        {
+            "id":12,
+            "content":[
+                {
+                    "hero":[
+                        {
+                            "id":1,
+                            "title":"Contact Us"
+                        }
+                    ],
+                    "breadFactory":[
+                        {
+                            "id":2,
+                            "content":[
+                                {
+                                    "id":1,
+                                    "title":"Harare Bread Factory",
+                                    "address":"1 Shepperton Road, Graniteside, Harare",
+                                    "phone1":"+263 242 710334, +263 242 751481",
+                                    "phone2":"+263 242 751572, +263 242 758559",
+                                    "image":"src/assets/img/bakers-outlet.jpg",
+                                    "VOIP":"08677006178",
+                                    "EconetTollFree":"08080151, 08080152"
+                                },
+                                {
+                                    "id":2,
+                                    "title":"Bulawayo Bread Factory",
+                                    "address":"22 A Bellevue Road, Belmount, Bulawayo",
+                                    "phone1":"+263 9 78279, +263 9 68826, +263 9 68381",
+                                    "phone2":"+263 9 68383, +263 9 65952, +263 9 76693",
+                                    "image":"src/assets/img/backers-outlet-zoomed-out.jpg",
+                                    "VOIP":"08677006179",
+                                    "EconetTollFree":"08080151, 08080152"
+                                }
+                            ]    
+                        }
+                    ],
+                    "Enquiries":[
+                        {
+                            "id":3,
+                            "title":"For job enquiries , email your CV to",
+                            "title2":"For general enquiries, email",
+                            "image":"src/assets/img/people-packaging.png"
+                        }
+                    ],
+                    "CallBack":[
+                        {
+                            "id":4,
+                            "title":"Request A Callback",
+                            "text":"Complete the form below and we will respond within 24 hours."
+                        }
                     ]
                 }
             ]
