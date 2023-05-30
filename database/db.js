@@ -305,19 +305,19 @@ const data = {
                                     "id":1,
                                     "title":"Premium Soft White Loaf",
                                     "text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas alias, neque, incidunt voluptatem quae omnis molestiae dolorum possimus delectus dignissimos quo consequuntur sit veritatis ad et corporis maxime placeat reiciendis optio praesentium sed nihil quia!",
-                                    "image":"src/assets/img/bakers-pie.jpg"
+                                    "image":"src/assets/img/meat-pie.png"
                                 },
                                 {
                                     "id":1,
                                     "title":"Family Loaf High Energy Brown",
                                     "text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas alias, neque, incidunt voluptatem quae omnis molestiae dolorum possimus delectus dignissimos quo consequuntur sit veritatis ad et corporis maxime placeat reiciendis optio praesentium sed nihil quia!",
-                                    "image":"src/assets/img/bakers-pie.jpg"
+                                    "image":"src/assets/img/meat-pie.png"
                                 },
                                 {
                                     "id":1,
                                     "title":"Family Loaf Soft White",
                                     "text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas alias, neque, incidunt voluptatem quae omnis molestiae dolorum possimus delectus dignissimos quo consequuntur sit veritatis ad et corporis maxime placeat reiciendis optio praesentium sed nihil quia!",
-                                    "image":"src/assets/img/bakers-pie.jpg"
+                                    "image":"src/assets/img/meat-pie.png"
                                 }
                             ],
                             "scones":[
@@ -325,19 +325,19 @@ const data = {
                                     "id":1,
                                     "title":"Sugar Free Scone",
                                     "text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas alias, neque, incidunt voluptatem quae omnis molestiae dolorum possimus delectus dignissimos quo consequuntur sit veritatis ad et corporis maxime placeat reiciendis optio praesentium sed nihil quia!",
-                                    "image":"src/assets/img/scone-cherry.jpg"
+                                    "image":"src/assets/img/sugar-free scone.png"
                                 },
                                 {
                                     "id":1,
                                     "title":"Sugar Free Scone",
                                     "text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas alias, neque, incidunt voluptatem quae omnis molestiae dolorum possimus delectus dignissimos quo consequuntur sit veritatis ad et corporis maxime placeat reiciendis optio praesentium sed nihil quia!",
-                                    "image":"src/assets/img/scone-cherry.jpg"
+                                    "image":"src/assets/img/sugar-free scone.png"
                                 },
                                 {
                                     "id":1,
                                     "title":"Sugar Free Scone",
                                     "text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas alias, neque, incidunt voluptatem quae omnis molestiae dolorum possimus delectus dignissimos quo consequuntur sit veritatis ad et corporis maxime placeat reiciendis optio praesentium sed nihil quia!",
-                                    "image":"src/assets/img/scone-cherry.jpg"
+                                    "image":"src/assets/img/sugar-free scone.png"
                                 }
                             ],
                             "donuts":[
@@ -345,19 +345,19 @@ const data = {
                                     "id":1,
                                     "title":"Chocolate Donut",
                                     "text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas alias, neque, incidunt voluptatem quae omnis molestiae dolorum possimus delectus dignissimos quo consequuntur sit veritatis ad et corporis maxime placeat reiciendis optio praesentium sed nihil quia!",
-                                    "image":"src/assets/img/scone-cherry.jpg"
+                                    "image":"src/assets/img/choc-donut.png"
                                 },
                                 {
                                     "id":1,
                                     "title":"Chocolate Donut",
                                     "text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas alias, neque, incidunt voluptatem quae omnis molestiae dolorum possimus delectus dignissimos quo consequuntur sit veritatis ad et corporis maxime placeat reiciendis optio praesentium sed nihil quia!",
-                                    "image":"src/assets/img/scone-cherry.jpg"
+                                    "image":"src/assets/img/white-choc-donut.png"
                                 },
                                 {
                                     "id":1,
                                     "title":"Chocolate Donut",
                                     "text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas alias, neque, incidunt voluptatem quae omnis molestiae dolorum possimus delectus dignissimos quo consequuntur sit veritatis ad et corporis maxime placeat reiciendis optio praesentium sed nihil quia!",
-                                    "image":"src/assets/img/scone-cherry.jpg"
+                                    "image":"src/assets/img/choc-donut.png"
                                 }
                             ]
                         }
