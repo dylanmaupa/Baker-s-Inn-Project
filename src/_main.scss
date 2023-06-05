@@ -183,7 +183,9 @@
         }
     }
 }
-
+body.active-modal{
+    overflow-y: hidden;
+}
 // ***** Landing Page FactoryTour *****
 .factory-tour {
     display: flex;
@@ -204,9 +206,80 @@
     .ft-img {
         width: 100%;
     }
+    .factory-modal{
+        button{
+            border: none;
+            border-radius: 10px;
+        }
+    }
 
-    .factory-modal {
+    .modal, .overlay{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+
+    }
+    .overlay{
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content{
         position: absolute;
+        text-align: center;
+        padding: 30px;
+        // overflow-y: scroll;
+        width: 90%;
+        height: 95%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: var(--sec-color);
+        .textBox{
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            gap: 40px;
+
+            p{
+                font-size: 14px;
+
+                a{
+                    font-weight: 700;
+                    text-decoration: underline;
+                    color: var(--pri-color);
+                }
+            }
+        }
+        .checkbox{
+            text-align: left;
+            margin: 0 100px;
+
+            p{
+                font-size: 14px;
+                vertical-align: bottom;
+                .check{
+                    border: none;
+                    margin-right: 8px;
+                    background: var(--accent-brown2);
+                }
+            }
+        }
+
+        .btn{
+            width: 84.5%;
+            // margin-inline: 100px;
+        }
+
+        .close-btn{
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            cursor: pointer;
+            // width: 50%;
+        }
     }
 }
 
@@ -225,6 +298,56 @@
 
         p {
             margin-block: 15px;
+        }
+    }
+    .factory-modal{
+        button{
+            border: none;
+            border-radius: 10px;
+        }
+    }
+
+    .modal, .overlay{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+
+    }
+    .overlay{
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content{
+        position: absolute;
+        text-align: center;
+        padding: 30px;
+        // overflow-y: scroll;
+        width: 90%;
+        height: 95%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: var(--sec-color);
+        p{
+            font-size: 15px;
+            margin: 20px 15rem;
+        }
+
+        .btn{
+            width: 84.5%;
+            margin-top: 20px;
+            // margin-inline: 100px;
+        }
+
+        .close-btn{
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            cursor: pointer;
+            // width: 50%;
         }
     }
 
@@ -603,7 +726,7 @@ footer {
 .aboutHero,
 .productsHero,
 .contact-hero {
-    background: url(./assets/img/bakers-outlet.jpg);
+    background: url(./assets/img/bakers-outlet.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -738,7 +861,7 @@ footer {
 
 // ***** About Page ProductsHero *****
 .productsHero {
-    background: url(./assets/img/cookies.jpg);
+    background: url(./assets/img/cookies.webp);
 }
 
 .tab-content.products {
@@ -905,7 +1028,7 @@ footer {
 }
 
 .contact-hero {
-    background: url(./assets/img/unsliced-loaves-zoomed.png);
+    background: url(./assets/img/unsliced-loaves-zoomed.webp);
 }
 
 .factory-info {
@@ -980,11 +1103,13 @@ footer {
     }
 }
 
-.callback{
+.form{
+
     form{
         display: grid;
         padding-inline: 100px;
         gap: 30px;
+        row-gap: 20px;
         grid-template-columns: repeat(2,1fr);
         select,input,textarea{
             width: 100%;
@@ -1007,3 +1132,6 @@ footer {
         }
     }
 }
+// .callback{
+// }
+

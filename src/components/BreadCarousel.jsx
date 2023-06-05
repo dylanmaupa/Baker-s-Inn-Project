@@ -18,7 +18,7 @@ const BreadCarousel = ({ item }) => {
             disableOnInteraction: false,
           }}
         >
-            {item.loaves.map((loaf, index) => {
+            {item.map((loaf, index) => {
                 return <SwiperSlide key={index}>
                     <img src={loaf} alt="baker's_inn_loaf" className='loaf-img' />
                 </SwiperSlide>

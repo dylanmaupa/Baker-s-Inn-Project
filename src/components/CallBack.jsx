@@ -2,10 +2,10 @@ import Button from "./Button";
 
 const CallBack = ({callback}) => {
   return (
-    <section className="callback">
+    <section className="form callback">
         <h2>{callback.title}</h2>
         <p>{callback.text}</p>
-        <form>
+        <form className="">
             <label className="label1">
                 <select name="Your Title">
                     <option value="Your Title">Your Title</option>

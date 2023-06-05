@@ -3,10 +3,14 @@ import { ReactComponent as PatternFour } from "../assets/img/African Pattern 4.s
 import BreadCarousel from "./BreadCarousel";
 import useFetch from "./useFetch";
 import data from "../../database/db";
+import image1 from "../assets/img/seed-loaf.png"
+import image2 from "../assets/img/white-soft-loaf.png"
+import image3 from "../assets/img/brown-loaf.png"
 
 
 const PromoNotifications = () => {
     // const { data: PromoNotifications, error, isLoading } = useFetch('http://localhost:7001/PromoNotifications');
+    const images = [image1,image2,image3]
     return (
         <>
             {data.PromoNotifications && data.PromoNotifications.map((item, index) => {
@@ -23,7 +27,7 @@ const PromoNotifications = () => {
                                 </form>
                             </div>
                             <div className="pm-imgBox">
-                                {item.images.map((image, index) => {
+                                {images.map((image, index) => {
                                     return (
                                         <div className="pm-img"><img src={image} alt="" /></div>
                                     )

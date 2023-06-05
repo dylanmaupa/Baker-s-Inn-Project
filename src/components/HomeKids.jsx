@@ -3,6 +3,10 @@ import { ReactComponent as PatternOne } from "../assets/img/African Pattern 1.sv
 import { ReactComponent as PatternTwo } from "../assets/img/African Pattern 2.svg";
 import Button from "./Button";
 import data from "../../database/db";
+import mario from "../assets/img/Mario.png"
+import mushroom from "../assets/img/mushroom.png"
+import leafPalm from "../assets/img/leaf-palm.png"
+import spikyTurtle from "../assets/img/spiky-turtle.png"
 
 const HomeKids = () => {
     // const { data: HomeKids, error, isLoading } = useFetch('http://localhost:7001/HomeKids');
@@ -18,10 +22,10 @@ const HomeKids = () => {
                                 {item.images && item.images.map(item => {
                                     return (
                                         <>
-                                            <img className="hk-img mario" src={item.mario} alt="mario_" />
-                                            <img className="hk-img mushroom" src={item.mushroom} alt="mushroom_" />
-                                            <img className="hk-img leaf-palm" src={item.leafPalm} alt="leaf_palm_" />
-                                            <img className="hk-img spiky-turtle" src={item.spikyTurtle} alt="spiky_turtle_" />
+                                            <img className="hk-img mario" src={mario} alt="mario_" />
+                                            <img className="hk-img mushroom" src={mushroom} alt="mushroom_" />
+                                            <img className="hk-img leaf-palm" src={leafPalm} alt="leaf_palm_" />
+                                            <img className="hk-img spiky-turtle" src={spikyTurtle} alt="spiky_turtle_" />
                                         </>
                                     );
                                 })}

@@ -61,16 +61,16 @@ const data = {
         {
             "id": 4,
             "title": "Book A Factory Tour",
-            "text": "Keen on seeing how Baker’s inn products are made? Are you interested in a field trip day for your school’s class? Get in touch with us to book a tour of our factory that is closest to you. Fill in the booking form and we will get back to you.",
-            "image": "src/assets/img/loaves-unsliced.jpg"
+            "text": "Keen on seeing how Baker’s inn products are made? Are you interested in a field trip day for your school’s class? Get in touch with us to book a tour of our factory that is closest to you. Fill in the booking form and we will get back to you."
+            // "image": "src/assets/img/loaves-unsliced.jpg"
         }
     ],
     "RequestDonation":[
         {
             "id": 5,
             "title": "Request A Donation",
-            "text": "If you are holding an event that you wish to have us donate to, we’re more than glad to help. Fill in the donation request form for us to best understand how we can increase your event’s impact in the local community",
-            "image": "src/assets/img/people-packaging-zoomed.jpg"
+            "text": "If you are holding an event that you wish to have us donate to, we’re more than glad to help. Fill in the donation request form for us to best understand how we can increase your event’s impact in the local community"
+            // "image": "src/assets/img/people-packaging-zoomed.jpg"
         }
     ],
     "HomeKids":[
@@ -81,7 +81,7 @@ const data = {
             "images":[
                 {
                     "id": 1,
-                    "mario": "src/assets/img/Mario.png",
+                    // "mario": "src/assets/img/Mario.png",
                     "mushroom": "src/assets/img/mushroom.png",
                     "leafPalm": "src/assets/img/leaf-palm.png",
                     "spikyTurtle": "src/assets/img/spiky-turtle.png"
@@ -108,7 +108,7 @@ const data = {
             "kids":[
                 {
                     "id":1,
-                    "image":"src/assets/img/sandwitches.jpg",
+                    // "image":"src/assets/img/sandwitches.jpg",
                     "title": "Shawarma Sandwich",
                     "prep": "20 min",
                     "serves":"6"
@@ -131,7 +131,7 @@ const data = {
             "vegans":[
                 {
                     "id":1,
-                    "image":"src/assets/img/sweet-shortbread.png",
+                    // "image":"src/assets/img/sweet-shortbread.png",
                     "title": "Sweet Shortbread",
                     "prep": "20 min",
                     "serves":"6"
@@ -139,14 +139,14 @@ const data = {
                 {
                     "id":1,
                     "title": "Sweet Shortbread",
-                    "image":"src/assets/img/sweet-shortbread.png",
+                    // "image":"src/assets/img/sweet-shortbread.png",
                     "prep": "20 min",
                     "serves":"6"
                 },
                 {
                     "id":1,
                     "title": "Sweet Shortbread",
-                    "image":"src/assets/img/sweet-shortbread.png",
+                    // "image":"src/assets/img/sweet-shortbread.png",
                     "prep": "20 min",
                     "serves":"6"
                 }
@@ -154,7 +154,7 @@ const data = {
             "family":[
                 {
                     "id":1,
-                    "image":"src/assets/img/salmon-stripes.jpg",
+                    // "image":"src/assets/img/salmon-stripes.jpg",
                     "title": "Salmon Stripes",
                     "prep": "20 min",
                     "serves":"6"
@@ -162,14 +162,14 @@ const data = {
                 {
                     "id":1,
                     "title": "Salmon Stripes",
-                    "image":"src/assets/img/salmon-stripes.jpg",
+                    // "image":"src/assets/img/salmon-stripes.jpg",
                     "prep": "20 min",
                     "serves":"6"
                 },
                 {
                     "id":1,
                     "title": "Salmon Stripes",
-                    "image":"src/assets/img/salmon-stripes.jpg",
+                    // "image":"src/assets/img/salmon-stripes.jpg",
                     "prep": "20 min",
                     "serves":"6"
                 }
@@ -366,9 +366,15 @@ const data = {
             ]
         }
     ],
+    // "Recipes":[
+    //     {
+    //         "id":11,
+    //         "title":"The Finest of Baker’s Tik Tok Community Recipes"
+    //     }
+    // ],
     "kidsCorner":[
         {
-            "id":11,
+            "id":12,
             "content":[
                 {
                     "hero":[
@@ -410,7 +416,7 @@ const data = {
     ],
     "contact":[
         {
-            "id":12,
+            "id":13,
             "content":[
                 {
                     "hero":[

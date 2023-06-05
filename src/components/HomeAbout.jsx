@@ -1,10 +1,15 @@
 import Button from "./Button";
 import useFetch from "./useFetch";
 import data from "../../database/db";
-
+import image1 from "../assets/img/bakers-sandwitch.jpg"
+import image2 from "../assets/img/bakers-pie.jpg"
+import image3 from "../assets/img/donut-coffee.jpg"
+import image4 from "../assets/img/bread-slices.jpg"
 
 const HomeAbout = () => {
     // const { data: homeAbout, error, isLoading } = useFetch('http://localhost:7001/homeAbout');
+
+    const images = [image1,image2,image3,image4]
     return (
         <>
             {data.homeAbout && data.homeAbout.map((item, index) => {
@@ -16,9 +21,9 @@ const HomeAbout = () => {
                             <Button className="about-btn" toPath="/about" title="READ MORE" />
                         </div>
                         <div className="about-imgBox">
-                            {item.sandwiches && item.sandwiches.map((sandwich, index) => {
+                            {images && images.map((sandwich, index) => {
                                 return (
-                                    <div className="abt-img"><img src={sandwich} alt="sandwiches_" /></div>
+                                    <div className="abt-img" key={index}><img src={sandwich} alt="sandwiches_" /></div>
                                 );
                             })}
                         </div>

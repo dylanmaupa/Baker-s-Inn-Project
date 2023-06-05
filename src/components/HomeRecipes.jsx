@@ -3,7 +3,9 @@ import useFetch from "./useFetch";
 import { useState } from "react";
 import { ReactComponent as RightArrow } from "../assets/img/right-arrow.svg";
 import data from "../../database/db";
-
+import image1 from "../assets/img/sandwitches.jpg"
+import image2 from "../assets/img/sweet-shortbread.png"
+import image3 from "../assets/img/salmon-stripes.jpg"
 
 const HomeRecipes = () => {
     // const { data: Recipes, error, isLoading } = useFetch('http://localhost:7001/Recipes');
@@ -29,7 +31,7 @@ const HomeRecipes = () => {
                                     return (
                                         <div className="tab-card">
                                             <div className="img">
-                                                <img src={card.image} alt="" />
+                                                <img src={image1} alt="" />
                                             </div>
                                             <div className="textBox">
                                                 <h3>{card.title}</h3>
@@ -48,7 +50,7 @@ const HomeRecipes = () => {
                                     return (
                                         <div className="tab-card">
                                             <div className="img">
-                                                <img src={card.image} alt="" />
+                                                <img src={image2} alt="" />
                                             </div>
                                             <div className="textBox">
                                                 <h3>{card.title}</h3>
@@ -67,7 +69,7 @@ const HomeRecipes = () => {
                                     return (
                                         <div className="tab-card">
                                             <div className="img">
-                                                <img src={card.image} alt="" />
+                                                <img src={image3} alt="" />
                                             </div>
                                             <div className="textBox">
                                                 <h3>{card.title}</h3>
