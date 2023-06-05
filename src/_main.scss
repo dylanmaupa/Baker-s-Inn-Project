@@ -3,6 +3,7 @@
     align-items: center;
     margin-right: auto;
     padding-left: 40px;
+    margin-bottom: 20px;
     /* justify-content: space-between; */
 }
 
@@ -1134,4 +1135,94 @@ footer {
 }
 // .callback{
 // }
+.recipes-hero{
+    display: none;
+}
+.recipes-hero-active{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    // gap: 40px;
+    max-width: 1366px;
+    margin: 0 auto;
 
+    .textBox{
+        display: none;
+    }
+
+    .textBox-active{
+        width: 100%;
+        padding-right: 10rem;
+        h2{
+            font-size: 54px;
+            line-height: 1.2;
+        }
+        p{
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        p:last-child{
+            color: var(--accent-brown);
+            font-family: 'Montserrat',sans-serif;
+            font-weight: 800;
+            font-size: 18px;
+        }
+    }
+
+    .imgBox{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 10px;
+        // background: #00000098;
+        .overlay{
+            background: #00000098;
+            width: 100%;
+            height: 97%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border-radius: 5px;
+        }
+        .img{
+            position: relative;
+        }
+        .img:first-child,.overlay:first-child{
+            grid-column: 1;
+        }
+    }
+    .imgBox.one{
+        .img:first-child{
+            // display: none;
+            .overlay:first-child{
+                display: none;
+            }
+        }
+    }
+    .imgBox.second{
+        .img:first-child{
+            // display: none;
+            .overlay:nth-child(2){
+                display: none;
+            }
+        }
+    }
+    .imgBox.third{
+        .img:nth-child(3){
+            // display: none;
+            .overlay:first-child{
+                display: none;
+            }
+        }
+    }
+    .imgBox.forth{
+        .img:nth-child(4){
+            // display: none;
+            .overlay:first-child{
+                display: none;
+            }
+        }
+    }
+}
