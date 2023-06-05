@@ -186,6 +186,7 @@
 }
 body.active-modal{
     overflow-y: hidden;
+    // filter: blur(10px);
 }
 // ***** Landing Page FactoryTour *****
 .factory-tour {
@@ -585,6 +586,60 @@ body.active-modal{
                 //  padding-inline: 10px;
                 border-bottom: 5px solid var(--accent-brown);
             }
+        }
+    }
+    .modal, .overlay{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        .close-btn{
+            position: absolute;
+            right: 70px;
+            z-index: 3;
+            top: 20px;
+            cursor: pointer;
+            // width: 50%;
+        }
+
+    }
+    .overlay{
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content{
+        position: absolute;
+        // text-align: center;
+        display: flex;
+        padding: 20px ;
+        gap: 30px;
+        // padding-bottom: 100px;
+        // overflow-y: scroll;
+        // z-index: 99;
+        width: 92%;
+        height: 98%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: var(--sec-color);
+        .imgBox{
+            width: 70%;
+            gap:   10px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            // img{
+            //     width: 80%;
+            // }
+            img:first-child{
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+        }
+
+        .textBox{
+            width: 100%;
         }
     }
 }

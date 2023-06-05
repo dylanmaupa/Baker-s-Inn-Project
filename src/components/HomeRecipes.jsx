@@ -6,6 +6,7 @@ import data from "../../database/db";
 import image1 from "../assets/img/sandwitches.jpg"
 import image2 from "../assets/img/sweet-shortbread.png"
 import image3 from "../assets/img/salmon-stripes.jpg"
+import RecipesModal from "./RecipesModal";
 
 const HomeRecipes = () => {
     // const { data: Recipes, error, isLoading } = useFetch('http://localhost:7001/Recipes');
@@ -39,7 +40,7 @@ const HomeRecipes = () => {
                                                     <p>Prep Time: <span style={{ display: 'inline-block' }}>{card.prep}</span></p>
                                                     <p>Serves: <span style={{ display: 'inline-block' }}>{card.serves}</span></p>
                                                 </div>
-                                                <RightArrow className="right-arrow" />
+                                                <RecipesModal className="right-arrow" />
                                             </div>
                                         </div>
                                     );
