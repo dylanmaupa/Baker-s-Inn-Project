@@ -1457,8 +1457,50 @@ footer {
                 grid-column: 2;
                 grid-row: 2;
             }
-            .footer-links:first-child{
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .hero,.home-kids,.promo-notifications{
+        height: 100vh;
+    }
+    .about-textBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about-imgBox{
+        // grid-template-columns: repeat(1,1fr);
+        display: none;
+        overflow-x: scroll;
+        width: 600px;
+    }
+    .home-products{
+        .hp-imgBox{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+    .factory-tour{
+        flex-direction: column-reverse;
+    }
+    .request-donation{
+        flex-direction: column;
+    }
+    .tab-content{
+        .tab-wrapper{
+            flex-direction: column;
+        }
+    }
+    footer{
+        .footer-logo{
+            img{
+                width: 25%;
+            }
+        }
+        .footer-wrapper{
+            grid-template-columns: repeat(1,1fr);
+            .f-imgBox{
                 grid-column: 1;
+                grid-row: 4;
             }
         }
     }
