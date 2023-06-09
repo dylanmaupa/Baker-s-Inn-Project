@@ -16,7 +16,7 @@ const Navbar = () => {
                 <li className="menu-item"><NavLink to="/kids">Kid's Corner</NavLink></li>
                 <Button toPath='/contact' title="Contact Us" />
             </ul>
-            <div className="hamburger" c>
+            <div className="hamburger">
                 <div className="box"></div>
                 <div className="box"></div>
                 <div className="box"></div>

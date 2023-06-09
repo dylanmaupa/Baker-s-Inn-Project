@@ -6,9 +6,7 @@ import useFetch from "../components/useFetch";
 import data from "../../database/db";
 
 const AboutUs = () => {
-  // let AboutUs = data;
-  // console.log(AboutUs)
-  // const { data: AboutUs, error, isLoading } = useFetch('http://localhost:7001/AboutUs');
+
   return (
     <>
       {data.AboutUs && data.AboutUs.map(item => {
