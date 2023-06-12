@@ -1261,9 +1261,9 @@ footer {
             outline: none;
             background: var(--accent-brown2);
         }
-        .label1{
-            grid-column: 1;
-        }
+        // .label1{
+        //     grid-column: 1;
+        // }
         .nature{
             margin-block: 30px;
         }
@@ -1526,8 +1526,14 @@ footer {
 }
 
 @media screen and (max-width:500px) {
+    .navBar{
+        padding-inline: 10px;
+    }
     .hero,.home-kids,.about-hero{
         height: 80vh;
+    }
+    .aboutHero, .productsHero, .contact-hero{
+        height: 50vh;
     }
     .about-textBox{
         grid-template-columns: repeat(1,1fr);
@@ -1556,6 +1562,34 @@ footer {
             padding-inline: 20px;
         }
     }
+
+    .factory-tour{
+        .modal-content{
+            width: 93%;
+            padding: 20px;
+            overflow-y: scroll;
+            h2{
+                text-align: left;
+            }
+
+            .textBox{
+                flex-direction: column;
+                gap: 5px;
+            }
+            .checkbox{
+                margin: 0 20px;
+            }
+        }
+    }
+    .form{
+        form{
+            display: flex;
+            flex-direction: column;
+            padding-inline: 0px;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
     .home-products{
         .hp-imgBox{
             grid-template-columns: repeat(1,1fr);
@@ -1585,6 +1619,16 @@ footer {
     .coreValues{
         .wrapper{
             grid-template-columns: repeat(1,1fr);
+        }
+    }
+    .mv{
+        gap: 50px;
+        padding: 6rem 30px;
+    }
+    .mv-card{
+        text-align: center;
+        .imgBox{
+            display: none;
         }
     }
     .promo-notifications{
